@@ -1,6 +1,6 @@
 import React,{useState} from "react"
 import { MainContainer, FormContainer, FormBox, AddButton, ListBlock, TrashButton } from "./styles";
-import { FaPlus, FaTrash, FaCheck } from "react-icons/fa";
+import { FaPlus, FaTrash } from "react-icons/fa";
 export default function TaskList(){
     const [input, setInput] = useState();
   const [task, setTask] = useState([]);
