@@ -24,7 +24,7 @@ export default function Notes() {
       <MainContainer>
         <FormContainer onSubmit={(e) => e.preventDefault()}>
             <FormBox>
-                <label> Título </label>
+                <label> Título da Nota </label>
                 <input
                 name="title"
                 value={inputOne} onChange={(e) => {
@@ -40,6 +40,8 @@ export default function Notes() {
                         setInputTwo(e.target.value);
                     }}
                  />
+                 <label> Data</label>
+                <input type="date" />
           </FormBox>
           <button onClick={() => {addNote();}}>
             Adicionar Nota
